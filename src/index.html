@@ -8,7 +8,66 @@
 </head>
 
 <body>
+    <header class="bg-warna-ketiga top-0 w-full flex justify-end">
+        <div class="container">
+            <!-- relative: maju 1 dimensi tapi tempat lamanya gabisa diisi -->
+            <div class="flex justify-between relative">
+                <!-- logo -->
+                <div class="flex items-center px-4">
+                    <div class="flex justify-center px-4 left-0 rounded-lg ">
+                        <div class="flex py-3">
+                            <div class="w-1/2">
+                                <img class="bg-warna-keempat rounded-lg p-2" width="40vh"
+                                    src="../img/logo_astronot_nebula.png" alt="">
+                            </div>
+                            <div class="w-1/2 mt-2 font-bold text-lg text-warna-pertama">
+                                <p>ilhamadi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- akhir logo -->
 
+                <!-- navigasi -->
+                <div class="flex items-center px-4">
+                    <div class="flex justify-center px-4 right-0 rounded-lg ">
+                        <button id="btn-hamburger" class="lg:hidden">
+                            <span id="gh1"
+                                class="garis-hamburger transition duration-300 ease-in-out origin-top-right"></span>
+                            <span id="gh2" class="garis-hamburger transition duration-300"></span>
+                            <span id="gh3"
+                                class="garis-hamburger transition duration-300 ease-in-out origin-bottom-right"></span>
+                        </button>
+
+                        <nav id="nav-menu"
+                            class="absolute bg-warna-kedua right-6 rounded-lg py-1 top-full hidden lg:block lg:static lg:bg-transparent">
+                            <ul class="block text-warna-pertama font-medium lg:flex">
+                                <li class="group rounded-lg hover:bg-warna-keempat">
+                                    <a href="#home" class="text-base py-2 mx-8 flex">Home</a>
+                                </li>
+                                <li class="group rounded-lg hover:bg-warna-keempat">
+                                    <a href="#about" class="text-base  py-2 mx-8 flex">About</a>
+                                </li>
+                                <li class="group rounded-lg hover:bg-warna-keempat">
+                                    <a href="#certificates" class="text-base  py-2 mx-8 flex">Certificates</a>
+                                </li>
+                                <li class="group rounded-lg hover:bg-warna-keempat">
+                                    <a href="#contacts" class="text-base  py-2 mx-8 flex">Contact
+                                        Me</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+                <!-- akhir navigasi -->
+
+
+            </div>
+        </div>
+    </header>
 </body>
+
+<script src="script.js"></script>
 
 </html>

@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.garis-hamburger{
+    @apply w-[30px] h-[2px] block my-2 bg-warna-pertama
+}
+
+
+.aktif-garis-hamburger > #gh1{
+    @apply -rotate-45;
+    @apply origin-top-right; /*mengubah titik tumpu putaran*/
+}
+
+.aktif-garis-hamburger > #gh2{
+    @apply scale-0;
+}
+
+.aktif-garis-hamburger > #gh3{
+    @apply rotate-45; 
+    @apply origin-bottom-right;
+}
