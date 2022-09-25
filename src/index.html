@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +25,7 @@
                                 <img class="bg-warna-keempat rounded-lg p-2" width="40vh"
                                     src="../img/logo_astronot_nebula.png" alt="">
                             </div>
-                            <div class="w-1/2 mt-2 font-bold text-lg text-warna-pertama">
+                            <div class="w-1/2 mt-2 font-bold text-lg text-warna-pertama font-teks-pertama">
                                 <p>ilhamadi</p>
                             </div>
                         </div>
@@ -31,7 +36,7 @@
                 <!-- navigasi -->
                 <div class="flex items-center px-4">
                     <div class="flex justify-center px-4 right-0 rounded-lg ">
-                        <button id="btn-hamburger" class="lg:hidden">
+                        <button id="btn-hamburger" class="laptop:hidden">
                             <span id="gh1"
                                 class="garis-hamburger transition duration-300 ease-in-out origin-top-right"></span>
                             <span id="gh2" class="garis-hamburger transition duration-300"></span>
@@ -40,8 +45,8 @@
                         </button>
 
                         <nav id="nav-menu"
-                            class="absolute bg-warna-kedua right-6 rounded-lg py-1 top-full hidden lg:block lg:static lg:bg-transparent">
-                            <ul class="block text-warna-pertama font-medium lg:flex">
+                            class="absolute bg-warna-kedua right-6 rounded-lg py-1 top-full hidden laptop:block laptop:static laptop:bg-transparent">
+                            <ul class="block text-warna-pertama font-medium laptop:flex">
                                 <li class="group rounded-lg hover:bg-warna-keempat">
                                     <a href="#home" class="text-base py-2 mx-8 flex">Home</a>
                                 </li>
@@ -61,11 +66,30 @@
                     </div>
                 </div>
                 <!-- akhir navigasi -->
-
-
             </div>
         </div>
     </header>
+
+    <div class="hero py-5 ">
+        <div class="siapa laptop:flex mobile:block gap-2">
+            <div
+                class="flex mobile:mx-3 mobile:block laptop:m-auto laptop:ml-2 laptop:w-1/2 rounded-[6px]  bg-warna-pertama p-3 hover:opacity-[98%]">
+                <h1 class="text-warna-ketiga font-teks-pertama py-2 text-center">Ilham Adikusuma</h1>
+                <p class="text-warna-kedua text-center font-semibold font-text-pertama mx-auto">I am one of the
+                    practicum assistants
+                    from
+                    the
+                    Programming Lab at the
+                    Faculty of Computer Science,
+                    Unej</p>
+            </div>
+            <div
+                class="flex laptop:w-1/2 mobile:m-3 bg-warna-keempat rounded-[10px] laptop:rounded-[100px] justify-center">
+                <img class="laptop:w-[50%] hover:scale-90 transition duration-300 ease-in-out"
+                    src="../img/ilham_jas_almet.png" alt="">
+            </div>
+        </div>
+    </div>
 </body>
 
 <script src="script.js"></script>

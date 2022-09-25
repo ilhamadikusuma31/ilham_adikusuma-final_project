@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    @apply bg-gradient-to-br from-warna-kedua to-warna-ketiga;
+}
+
+
+
 
 .garis-hamburger{
     @apply w-[30px] h-[2px] block my-2 bg-warna-pertama
@@ -21,3 +27,4 @@
     @apply rotate-45; 
     @apply origin-bottom-right;
 }
+

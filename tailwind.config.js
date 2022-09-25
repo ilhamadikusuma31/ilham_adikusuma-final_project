@@ -10,6 +10,13 @@ module.exports = {
         'warna-keempat': '#EE964B', 
         'warna-kelima': '#F95738', 
     },
+    fontFamily:{
+      'teks-pertama':'Poppins',
+    },
+    screens:{
+      'mobile':'320px',
+      'laptop':'1024px',
+    }
   },
   },
   plugins: [],
