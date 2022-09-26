@@ -13,69 +13,62 @@
 </head>
 
 <body>
-    <header class="bg-warna-ketiga top-0 w-full flex justify-end">
+    <!-- header -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
-            <!-- relative: maju 1 dimensi tapi tempat lamanya gabisa diisi -->
-            <div class="flex justify-between relative">
-                <!-- logo -->
-                <div class="flex items-center px-4">
-                    <div class="flex justify-center px-4 left-0 rounded-lg ">
-                        <div class="flex py-3">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home">
+                        <div class="flex py-5">
                             <div class="w-1/2">
-                                <img class="bg-warna-keempat rounded-lg p-2" width="40vh"
-                                    src="../img/logo_astronot_nebula.png" alt="">
+                                <img width="40vh" src="../img/logo_astronot_nebula.png" alt="">
                             </div>
-                            <div class="w-1/2 mt-2 font-bold text-lg text-warna-pertama font-teks-pertama">
+                            <div class="font-bold text-lg text-warna-pertama w-1/2 block mt-1 ml-0">
                                 <p>ilhamadi</p>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <!-- akhir logo -->
-
-                <!-- navigasi -->
                 <div class="flex items-center px-4">
-                    <div class="flex justify-center px-4 right-0 rounded-lg ">
-                        <button id="btn-hamburger" class="laptop:hidden">
-                            <span id="gh1"
-                                class="garis-hamburger transition duration-300 ease-in-out origin-top-right"></span>
-                            <span id="gh2" class="garis-hamburger transition duration-300"></span>
-                            <span id="gh3"
-                                class="garis-hamburger transition duration-300 ease-in-out origin-bottom-right"></span>
-                        </button>
+                    <button id="btn-hamburger" class="laptop:hidden">
+                        <span id="gh1"
+                            class="garis-hamburger transition duration-300 ease-in-out origin-top-right"></span>
+                        <span id="gh2" class="garis-hamburger transition duration-300"></span>
+                        <span id="gh3"
+                            class="garis-hamburger transition duration-300 ease-in-out origin-bottom-right"></span>
+                    </button>
 
-                        <nav id="nav-menu"
-                            class="absolute bg-warna-kedua right-6 rounded-lg py-1 top-full hidden laptop:block laptop:static laptop:bg-transparent">
-                            <ul class="block text-warna-pertama font-medium laptop:flex">
-                                <li class="group rounded-lg hover:bg-warna-keempat">
-                                    <a href="#home" class="text-base py-2 mx-8 flex">Home</a>
-                                </li>
-                                <li class="group rounded-lg hover:bg-warna-keempat">
-                                    <a href="#about" class="text-base  py-2 mx-8 flex">About</a>
-                                </li>
-                                <li class="group rounded-lg hover:bg-warna-keempat">
-                                    <a href="#certificates" class="text-base  py-2 mx-8 flex">Certificates</a>
-                                </li>
-                                <li class="group rounded-lg hover:bg-warna-keempat">
-                                    <a href="#contacts" class="text-base  py-2 mx-8 flex">Contact
-                                        Me</a>
-                                </li>
-                            </ul>
-                        </nav>
-
-                    </div>
+                    <nav id="nav-menu"
+                        class="absolute bg-warna-kedua right-6 rounded-lg py-1 top-full hidden laptop:block laptop:static laptop:bg-transparent">
+                        <ul class="block text-warna-pertama font-medium laptop:flex">
+                            <li class="group rounded-lg hover:bg-warna-keempat">
+                                <a href="#hero" class="text-base py-2 mx-8 flex">Home</a>
+                            </li>
+                            <li class="group rounded-lg hover:bg-warna-keempat">
+                                <a href="#about" class="text-base  py-2 mx-8 flex">About</a>
+                            </li>
+                            <li class="group rounded-lg hover:bg-warna-keempat">
+                                <a href="#education" class="text-base  py-2 mx-8 flex">Education</a>
+                            </li>
+                            <li class="group rounded-lg hover:bg-warna-keempat">
+                                <a href="#portofolio" class="text-base  py-2 mx-8 flex">Portfolio
+                                    Me</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <!-- akhir navigasi -->
+
             </div>
         </div>
+
     </header>
 
-    <div class="hero py-5 ">
-        <div class="siapa laptop:flex mobile:block gap-2">
+    <div class="hero py-5 pt-32" id="hero">
+        <div class="laptop:flex mobile:block gap-2">
             <div
-                class="flex mobile:mx-3 mobile:block laptop:m-auto laptop:ml-2 laptop:w-1/2 rounded-[6px]  bg-warna-pertama p-3 hover:opacity-[98%]">
-                <h1 class="text-warna-ketiga font-teks-pertama py-2 text-center">Ilham Adikusuma</h1>
-                <p class="text-warna-kedua text-center font-semibold font-text-pertama mx-auto">I am one of the
+                class="flex mobile:w-[75%] mobile:mx-auto mobile:block laptop:m-auto laptop:ml-2 laptop:w-1/2 rounded-[6px]  bg-warna-pertama  hover:opacity-[98%]">
+                <h1 class="text-warna-ketiga font-teks-pertama py-1 text-center">Ilham Adikusuma</h1>
+                <p class="text-warna-kedua text-center font-semibold font-text-pertama mx-auto p-4">I am one of the
                     practicum assistants
                     from
                     the
@@ -84,9 +77,35 @@
                     Unej</p>
             </div>
             <div
-                class="flex laptop:w-1/2 mobile:m-3 bg-warna-keempat rounded-[10px] laptop:rounded-[100px] justify-center">
+                class="flex laptop:w-1/2 mobile:m-1 mobile:scale-[80%] bg-warna-keempat rounded-[10px] laptop:rounded-[100px] justify-center">
                 <img class="laptop:w-[50%] hover:scale-90 transition duration-300 ease-in-out"
                     src="../img/ilham_jas_almet.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="education py-1" id="education">
+        <h1 class="h1 font-teks-pertama text-center font-bold text-warna-pertama mb-3 text-2xl">Education</h1>
+        <div class="laptop:flex laptop:flex-wrap mobile:block text-center gap-3">
+            <div
+                class="laptop:w-1/3 mobile:w-[75%] mx-auto bg-warna-kelima opacity-80 py-2 transition duration-300 ease-in-out hover:shadow-xl drop-shadow-xl rounded-md mobile:my-4">
+                <h2 class="h2 text-medium font-teks-pertama text-warna-kedua">SDN 13 Jakarta</h2>
+                <p class="h2 text-medium font-semibold text-warna-pertama">2007-2013</p>
+            </div>
+            <div
+                class="laptop:w-1/3 mobile:w-[75%] mx-auto bg-warna-kelima opacity-80 py-2 transition duration-300 ease-in-out hover:shadow-xl drop-shadow-xl rounded-md mobile:my-4">
+                <h2 class="h2 text-medium font-teks-pertama text-warna-kedua">SMPN 272 Jakarta</h2>
+                <p class="h2 text-medium font-semibold text-warna-pertama">2013-2016</p>
+            </div>
+            <div
+                class="laptop:w-1/3 mobile:w-[75%] mx-auto bg-warna-kelima opacity-80 py-2 transition duration-300 ease-in-out hover:shadow-xl drop-shadow-xl rounded-md mobile:my-4">
+                <h2 class="h2 text-medium font-teks-pertama text-warna-kedua">SMAN 113 Jakrta</h2>
+                <p class="h2 text-medium font-semibold text-warna-pertama">2016-2019</p>
+            </div>
+            <div
+                class="laptop:w-1/3 mobile:w-[75%] mx-auto bg-warna-kelima opacity-80 py-2 transition duration-300 ease-in-out hover:shadow-xl drop-shadow-xl rounded-md mobile:my-4">
+                <h2 class="h2 text-medium font-teks-pertama text-warna-kedua">UNIVERSITAS JEMBER</h2>
+                <p class="h2 text-medium font-semibold text-warna-pertama">2020-current</p>
             </div>
         </div>
     </div>
